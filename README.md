@@ -8,8 +8,8 @@ It is fully responsive and displays well on all devices.
 
 Here is two pictures of project:
 
-#Picture 1
+# Picture 1
 <img src="screen1" alt="Picture1">
 
-#Picture 2
+# Picture 2
 <img src="screen1" alt="Picture1">
