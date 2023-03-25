@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(222, 222, 222);
+}
+
+/* Tab Styles */
+#timerTab, #chronometerTab{
+    cursor: pointer;
+    background-color: rgb(60, 60, 60);
+}
+#homeTab{
+    cursor: pointer;
+    background-color: rgb(10, 10, 10);
+}
+
+li.nav-item:hover {
+    background-color: rgb(20, 20, 20, 0.9) !important;
+}
+
+#homeSection, #timerSection, #chronometerSection{
+    padding-bottom: 30px;
+}
+
+/* Home Section Styles*/
+#homeSection:first-child{
+    width: max-content;
+}
+
+#fullTime {
+    font-size: 6rem;
+}
+
+#timeAfter{
+    font-size: 4rem;
+}
+
+/* Chronometer Section Styles */
+#chronometerRow3 button, #timerRow2 button{
+    margin-inline: 7px;
+    background-color: white;
+}
+
+#chronometerRow3 button:hover, #timerRow2 button:hover{
+    color: rgb(9, 151, 180);
+}
+
+#chronometerRow3 button:active, #timerRow2 button:active{
+    color: white;
+    background-color: #0dcaf0;
+}
+
+#chronometerRow4 {
+    max-height: 190px;
+    overflow: auto;
+}
+
+/* Timer Section Styles */
+#timerInput button{
+    border: 2px solid darkcyan;
+}
+
+/* Other */
+button{
+    font-size: 3.2rem;
+    min-width: 70px !important;
+}
+
+#timer div:not(.text-black, .d-block), #chronometer div:not(.text-black, .d-block, .row){
+    box-shadow:0 0 25px 5px rgba(173,173,173,0.94);
+}
+
+@keyframes animation1 {
+    from {transform: rotateY(0deg)}
+    to {transform: rotateY(90deg)}
+}
+
+@keyframes animation2 {
+    from {transform: rotateY(-90deg)}
+    to {transform: rotateY(0deg)}
+}
+
+#chronometer #chronometerRow1 div, #timer #timerRow1 div {
+    padding-top: 5.5vmin;
+    padding-bottom: 5.5vmin;
+}
+
+#chronometer #chronometerRow2 div, #timer #timerRow2 div {
+    padding-top: 5vmin;
+    padding-bottom: 5vmin;
+}
+
+@media only screen and (max-width: 992px){
+    #chronometer #chronometerRow1 div, #timer #timerRow1 div {
+        padding-top: 4.5vmin;
+        padding-bottom: 4.5vmin;
+    }
+
+    #chronometer #chronometerRow2 div, #timer #timerRow2 div {
+        padding-top: 4vmin;
+        padding-bottom: 4vmin;
+    }
+
+}
