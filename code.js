@@ -198,7 +198,7 @@ function openTimer() {
         try {document.getElementsByClassName("alert").item(0).remove()} catch {}
         const alertDanger = document.createElement("div");
         alertDanger.className = "alert alert-dismissible alert-danger fade show position-fixed rounded-4";
-        alertDanger.style.bottom = "20px";
+        alertDanger.style.bottom = "25px";
         alertDanger.style.right = "15px";
 
         const heading = document.createElement("p");
@@ -249,7 +249,7 @@ function setTimer() {
         try {document.getElementsByClassName("alert").item(0).remove()} catch {}
         const alertSuccess = document.createElement("div");
         alertSuccess.className = "alert alert-dismissible alert-success fade show position-fixed rounded-4";
-        alertSuccess.style.bottom = "20px";
+        alertSuccess.style.bottom = "25px";
         alertSuccess.style.right = "15px";
 
         const heading = document.createElement("p");

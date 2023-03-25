@@ -33,7 +33,7 @@
                 <input type="number" class="form-control mt-4 fs-3 fw-medium text-center rounded-4 border-1 border-dark shadow" placeholder="Seconds" min="0" max="59">
                 <button class="btn btn-info mt-5 w-50 fs-3 mx-auto rounded-4 shadow" onclick="openTimer()"> Start </button>
             </div>
-            <div class="d-none row col-12 justify-content-center mt-1 mx-auto" id="timer">
+            <div class="d-none row col-11 justify-content-center mt-1 mx-auto" id="timer">
                 <div class="row col-md-8 col-12 justify-content-center mt-4 pt-4 pb-4 px-0 rounded-5 bg-light shadow" id="timerRow1">
                     <div class="col-1 fw-bold bg-dark fs-1 text-center px-1 mx-md-2 mx-1 rounded-3 text-info hour1">0</div>
                     <div class="col-1 fw-bold bg-dark fs-1 text-center px-1 mx-md-2 mx-1 rounded-3 text-info hour2">0</div>
@@ -52,9 +52,9 @@
         </div>
         <!-- Tab 2 -->
         <div class="d-flex flex-column px-1" id="homeSection">
-            <div class="row col-4 d-flex justify-content-center mx-auto mt-5 pe-5 rounded-4 shadow">
-                <p class="col-md-10 col-12 fw-medium text-dark text-center" id="fullTime"></p>
-                <p class="col-md-2 col-12 fw-medium text-dark text-center pt-4 ps-0" id="timeAfter"></p>
+            <div class="row col-lg-5 col-md-7 col-11 d-flex justify-content-center mx-auto mt-5 rounded-4 shadow">
+                <p class="col-md-9 col-12 justify-content-center fw-medium text-dark text-center" id="fullTime"></p>
+                <p class="col-md-3 col-12 justify-content-center fw-medium text-dark text-center pt-4 ps-0" id="timeAfter"></p>
             </div>
             <div class="row mx-auto mt-5">
                 <p class="fs-2 fw-medium text-center" id="fullDate"></p>
@@ -63,20 +63,22 @@
         <!-- Tab 3 -->
         <div class="d-none justify-content-center" id="chronometerSection">
             <div class="row col-11 justify-content-center mt-3" id="chronometer">
-                <div class="row col-md-8 col-12 justify-content-center mt-3 pt-4 pb-4 px-0 rounded-top-5 bg-light shadow" id="chronometerRow1">
-                    <div class="col-1 fw-bold bg-dark fs-1 text-center px-1 mx-md-2 mx-1 rounded-3 text-info hour1">0</div>
-                    <div class="col-1 fw-bold bg-dark fs-1 text-center px-1 mx-md-2 mx-1 rounded-3 text-info hour2">0</div>
-                    <div class="col-1 fw-bold fs-1 text-center px-1 pt-md-4 pt-3 mx-0 text-black"> : </div>
-                    <div class="col-1 fw-bold bg-dark fs-1 text-center px-1 mx-md-2 mx-1 rounded-3 text-info minute1">0</div>
-                    <div class="col-1 fw-bold bg-dark fs-1 text-center px-1 mx-md-2 mx-1 rounded-3 text-info minute2">0</div>
-                    <div class="col-1 fw-bold fs-1 text-center px-1 pt-md-4 pt-3 mx-0 text-black"> : </div>
-                    <div class="col-1 fw-bold bg-dark fs-1 text-center px-1 mx-md-2 mx-1 rounded-3 text-info second1">0</div>
-                    <div class="col-1 fw-bold bg-dark fs-1 text-center px-1 mx-md-2 mx-1 rounded-3 text-info second2">0</div>
-                </div>
-                <div class="row col-md-8 col-12 justify-content-center bg-light pb-3 rounded-bottom-5 shadow" id="chronometerRow2">
-                    <div class="col-1 bg-dark bg-opacity-75 fs-2 fw-bold text-center px-1 mx-2 rounded-3 text-info millisecond1">0</div>
-                    <div class="col-1 bg-dark bg-opacity-75 fs-2 fw-bold text-center px-1 mx-2 rounded-3 text-info millisecond2">0</div>
-                    <div class="col-1 bg-dark bg-opacity-75 fs-2 fw-bold text-center px-1 mx-2 rounded-3 text-info millisecond3">0</div>
+                <div class="row col-md-8 col-12 justify-content-center rounded-4 bg-light shadow">
+                    <div class="row justify-content-center mt-3 pt-4 pb-4 px-0" id="chronometerRow1">
+                        <div class="col-1 fw-bold bg-dark fs-1 text-center px-1 mx-md-2 mx-1 rounded-3 text-info hour1">0</div>
+                        <div class="col-1 fw-bold bg-dark fs-1 text-center px-1 mx-md-2 mx-1 rounded-3 text-info hour2">0</div>
+                        <div class="col-1 fw-bold fs-1 text-center px-1 pt-md-4 pt-3 mx-0 text-black"> : </div>
+                        <div class="col-1 fw-bold bg-dark fs-1 text-center px-1 mx-md-2 mx-1 rounded-3 text-info minute1">0</div>
+                        <div class="col-1 fw-bold bg-dark fs-1 text-center px-1 mx-md-2 mx-1 rounded-3 text-info minute2">0</div>
+                        <div class="col-1 fw-bold fs-1 text-center px-1 pt-md-4 pt-3 mx-0 text-black"> : </div>
+                        <div class="col-1 fw-bold bg-dark fs-1 text-center px-1 mx-md-2 mx-1 rounded-3 text-info second1">0</div>
+                        <div class="col-1 fw-bold bg-dark fs-1 text-center px-1 mx-md-2 mx-1 rounded-3 text-info second2">0</div>
+                    </div>
+                    <div class="row justify-content-center bg-light pb-3" id="chronometerRow2">
+                        <div class="col-1 bg-dark bg-opacity-75 fs-2 fw-bold text-center px-1 mx-2 rounded-3 text-info millisecond1">0</div>
+                        <div class="col-1 bg-dark bg-opacity-75 fs-2 fw-bold text-center px-1 mx-2 rounded-3 text-info millisecond2">0</div>
+                        <div class="col-1 bg-dark bg-opacity-75 fs-2 fw-bold text-center px-1 mx-2 rounded-3 text-info millisecond3">0</div>
+                    </div>
                 </div>
                 <div class="col-md-8 col-12 btn-group d-block text-center mt-5 mb-2 pb-3" id="chronometerRow3">
                     <button class="btn btn-outline-info border-0 rounded-circle fs-1 shadow" onclick="recordChronometer()"> <i class="fas fa-flag" title="Record"></i> </button>
